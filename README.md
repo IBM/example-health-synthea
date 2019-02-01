@@ -67,9 +67,9 @@ It also requires the IBM Data Server Driver for JDBC version 4.22.29 or later.
     * [gradle](https://gradle.org/install/)
     * [SQLite](https://SQLite.org/download.html) version 3.26.0 
     * DB2 JDBC driver version 4.22.29 or later.  This needs to be installed in your local Maven artifact repository.
-        ** If you already have the DB2 JDBC driver version 4.22.29 or later in your internal Maven artifact repository, you can use it.
+        * If you already have the DB2 JDBC driver version 4.22.29 or later in your internal Maven artifact repository, you can use it.
         You might need to change the `groupId`, `artifactId`, and `version` for the dependency in this project's `pom.xml` file to match the values used in your repository.
-        ** Otherwise download the [DB2 JDBC Driver](http://www-01.ibm.com/support/docview.wss?uid=swg21363866) version 4.22.29.  Extract the `db2jcc4.jar` file from the downloaded archive file
+        * Otherwise download the [DB2 JDBC Driver](http://www-01.ibm.com/support/docview.wss?uid=swg21363866) version 4.22.29.  Extract the `db2jcc4.jar` file from the downloaded archive file
         and run the following command to install it to your local Maven repository:
         ```
         mvn install:install-file -Dfile=db2jcc4.jar -Dversion=4.22.29 -DgroupId=com.ibm.db2.jcc -DartifactId=db2jcc4 -Dpackaging=jar
@@ -89,7 +89,7 @@ It also requires the IBM Data Server Driver for JDBC version 4.22.29 or later.
     ./gradlew build check test
     ```
 
-If you encounter any OutOfMemoryError exceptions you may need to update the `build.gradle` file to increase the size of the Java heap.
+    If you encounter any OutOfMemoryError exceptions you may need to update the `build.gradle` file to increase the size of the Java heap.
 
     ```
     test {
