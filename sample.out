@@ -1,0 +1,378 @@
+
+Generating data using Synthea
+> Task :versionTxt
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+
+> Task :run
+Loading /home/gregd/synthea/build/resources/main/modules/total_joint_replacement/functional_status_assessments.json
+Loading /home/gregd/synthea/build/resources/main/modules/surgery/general_anesthesia.json
+Loading /home/gregd/synthea/build/resources/main/modules/contraceptive_maintenance.json
+Loading /home/gregd/synthea/build/resources/main/modules/dementia.json
+Loading /home/gregd/synthea/build/resources/main/modules/allergic_rhinitis.json
+Loading /home/gregd/synthea/build/resources/main/modules/pregnancy.json
+Loading /home/gregd/synthea/build/resources/main/modules/veterans/veteran_suicide_probabilities.json
+Loading /home/gregd/synthea/build/resources/main/modules/med_rec.json
+Loading /home/gregd/synthea/build/resources/main/modules/injuries.json
+Loading /home/gregd/synthea/build/resources/main/modules/appendicitis.json
+Loading /home/gregd/synthea/build/resources/main/modules/hypothyroidism.json
+Loading /home/gregd/synthea/build/resources/main/modules/osteoporosis.json
+Loading /home/gregd/synthea/build/resources/main/modules/allergies.json
+Loading /home/gregd/synthea/build/resources/main/modules/metabolic_syndrome_disease.json
+Loading /home/gregd/synthea/build/resources/main/modules/mTBI.json
+Loading /home/gregd/synthea/build/resources/main/modules/atopy.json
+Loading /home/gregd/synthea/build/resources/main/modules/contraceptives/ring_contraceptive.json
+Loading /home/gregd/synthea/build/resources/main/modules/contraceptives/oral_contraceptive.json
+Loading /home/gregd/synthea/build/resources/main/modules/contraceptives/implant_contraceptive.json
+Loading /home/gregd/synthea/build/resources/main/modules/contraceptives/intrauterine_device.json
+Loading /home/gregd/synthea/build/resources/main/modules/contraceptives/injectable_contraceptive.json
+Loading /home/gregd/synthea/build/resources/main/modules/contraceptives/clear_contraceptive.json
+Loading /home/gregd/synthea/build/resources/main/modules/contraceptives/female_sterilization.json
+Loading /home/gregd/synthea/build/resources/main/modules/contraceptives/male_sterilization.json
+Loading /home/gregd/synthea/build/resources/main/modules/contraceptives/patch_contraceptive.json
+Loading /home/gregd/synthea/build/resources/main/modules/ear_infections.json
+Loading /home/gregd/synthea/build/resources/main/modules/dermatitis/moderate_cd_obs.json
+Loading /home/gregd/synthea/build/resources/main/modules/dermatitis/early_moderate_eczema_obs.json
+Loading /home/gregd/synthea/build/resources/main/modules/dermatitis/mid_moderate_eczema_obs.json
+Loading /home/gregd/synthea/build/resources/main/modules/dermatitis/severe_cd_obs.json
+Loading /home/gregd/synthea/build/resources/main/modules/dermatitis/early_severe_eczema_obs.json
+Loading /home/gregd/synthea/build/resources/main/modules/dermatitis/mid_severe_eczema_obs.json
+Loading /home/gregd/synthea/build/resources/main/modules/metabolic_syndrome_care.json
+Loading /home/gregd/synthea/build/resources/main/modules/female_reproduction.json
+Loading /home/gregd/synthea/build/resources/main/modules/copd.json
+Loading /home/gregd/synthea/build/resources/main/modules/asthma.json
+Loading /home/gregd/synthea/build/resources/main/modules/urinary_tract_infections.json
+Loading /home/gregd/synthea/build/resources/main/modules/osteoarthritis.json
+Loading /home/gregd/synthea/build/resources/main/modules/medications/otc_pain_reliever.json
+Loading /home/gregd/synthea/build/resources/main/modules/medications/otc_antihistamine.json
+Loading /home/gregd/synthea/build/resources/main/modules/medications/strong_opioid_pain_reliever.json
+Loading /home/gregd/synthea/build/resources/main/modules/medications/moderate_opioid_pain_reliever.json
+Loading /home/gregd/synthea/build/resources/main/modules/medications/ear_infection_antibiotic.json
+Loading /home/gregd/synthea/build/resources/main/modules/veteran_lung_cancer.json
+Loading /home/gregd/synthea/build/resources/main/modules/fibromyalgia.json
+Loading /home/gregd/synthea/build/resources/main/modules/veteran.json
+Loading /home/gregd/synthea/build/resources/main/modules/homelessness.json
+Loading /home/gregd/synthea/build/resources/main/modules/food_allergies.json
+Loading /home/gregd/synthea/build/resources/main/modules/veteran_self_harm.json
+Loading /home/gregd/synthea/build/resources/main/modules/anemia/anemia_sub.json
+Loading /home/gregd/synthea/build/resources/main/modules/lung_cancer.json
+Loading /home/gregd/synthea/build/resources/main/modules/contraceptives.json
+Loading /home/gregd/synthea/build/resources/main/modules/veteran_ptsd.json
+Loading /home/gregd/synthea/build/resources/main/modules/sore_throat.json
+Loading /home/gregd/synthea/build/resources/main/modules/veteran_mdd.json
+Loading /home/gregd/synthea/build/resources/main/modules/opioid_addiction.json
+Loading /home/gregd/synthea/build/resources/main/modules/primary_atrophic_hypothyroidism.json
+Loading /home/gregd/synthea/build/resources/main/modules/gallstones.json
+Loading /home/gregd/synthea/build/resources/main/modules/rheumatoid_arthritis.json
+Loading /home/gregd/synthea/build/resources/main/modules/dialysis.json
+Loading /home/gregd/synthea/build/resources/main/modules/congestive_heart_failure.json
+Loading /home/gregd/synthea/build/resources/main/modules/allergies/immunotherapy.json
+Loading /home/gregd/synthea/build/resources/main/modules/allergies/outgrow_food_allergies.json
+Loading /home/gregd/synthea/build/resources/main/modules/allergies/outgrow_env_allergies.json
+Loading /home/gregd/synthea/build/resources/main/modules/allergies/allergy_panel.json
+Loading /home/gregd/synthea/build/resources/main/modules/allergies/allergy_incidence.json
+Loading /home/gregd/synthea/build/resources/main/modules/allergies/severe_allergic_reaction.json
+Loading /home/gregd/synthea/build/resources/main/modules/lung_cancer/lung_cancer_probabilities.json
+Loading /home/gregd/synthea/build/resources/main/modules/attention_deficit_disorder.json
+Loading /home/gregd/synthea/build/resources/main/modules/veteran_substance_abuse_conditions.json
+Loading /home/gregd/synthea/build/resources/main/modules/epilepsy.json
+Loading /home/gregd/synthea/build/resources/main/modules/sinusitis.json
+Loading /home/gregd/synthea/build/resources/main/modules/colorectal_cancer.json
+Loading /home/gregd/synthea/build/resources/main/modules/sexual_activity.json
+Loading /home/gregd/synthea/build/resources/main/modules/cystic_fibrosis.json
+Loading /home/gregd/synthea/build/resources/main/modules/bronchitis.json
+Loading /home/gregd/synthea/build/resources/main/modules/veteran_substance_abuse_treatment.json
+Loading /home/gregd/synthea/build/resources/main/modules/wellness_encounters.json
+Loading /home/gregd/synthea/build/resources/main/modules/total_joint_replacement.json
+Loading /home/gregd/synthea/build/resources/main/modules/self_harm.json
+Loading /home/gregd/synthea/build/resources/main/modules/veteran_hyperlipidemia.json
+Loading /home/gregd/synthea/build/resources/main/modules/veteran_prostate_cancer.json
+Loading /home/gregd/synthea/build/resources/main/modules/lupus.json
+Loading /home/gregd/synthea/build/resources/main/modules/dermatitis.json
+Loading /home/gregd/synthea/build/resources/main/modules/gout.json
+Loading /home/gregd/synthea/build/resources/main/modules/anemia___unknown_etiology.json
+Loaded 90 modules.
+Running with options:
+Population: 10
+Seed: 1549034387810
+Location: New York
+Min Age: 0
+Max Age: 140
+3 -- Zora Stokes (4 y/o F) Buffalo, New York 
+8 -- Freddie Erdman (26 y/o F) Troy, New York 
+6 -- Wade Hirthe (31 y/o M) Peru, New York 
+1 -- Alfonso Gurule (41 y/o M) Buffalo, New York 
+4 -- Annetta Cassin (43 y/o F) Niskayuna, New York 
+2 -- Renato Altenwerth (59 y/o M) Danube, New York 
+7 -- Pearl Emard (59 y/o F) Amityville, New York 
+5 -- Marianela Trantow (69 y/o F) Plattsburgh, New York 
+9 -- Lester White (57 y/o M) Johnson City, New York DECEASED
+10 -- Cristal Gutkowski (89 y/o F) Vestal, New York 
+9 -- Rod Raynor (67 y/o M) Johnson City, New York 
+{alive=10, dead=1}
+
+BUILD SUCCESSFUL in 22s
+4 actionable tasks: 2 executed, 2 up-to-date
+
+Getting information from z/OS tables
+2019-02-01T10:20:10.093:  Loading the JDBC driver
+2019-02-01T10:20:10.207:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER
+2019-02-01T10:20:10.537:  Querying database
+2019-02-01T10:20:10.558:  Last patientid is 20
+
+Transforming csv files
+
+Loading z/OS tables
+2019-02-01T10:20:10.668:  Reading column definitions file ../summit-health-synthea/columndefs/sh-patients-csvcolumns.txt
+2019-02-01T10:20:10.767:  Converting input file output/csv/sh_patients.csv to block mode
+2019-02-01T10:20:10.771:  Loading the JDBC driver
+2019-02-01T10:20:10.782:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER
+2019-02-01T10:20:11.078:  Uploading data
+2019-02-01T10:20:11.615:  Upload of output/csv/sh_patients.csv complete.  Return code 0. 1DSNU000I    032 10:18:11.51 DSNUGUTC - OUTPUT START FOR UTILITY, UTILID = ZLOAD03210201107 
+ DSNU1045I   032 10:18:11.51 DSNUGTIS - PROCESSING SYSIN AS UNICODE UTF-8 
+0DSNU050I    032 10:18:11.52 DSNUGUTC -  TEMPLATE SORTIN DSN IBMUSER.SORTIN.T&TIME. UNIT SYSDA SPACE(10, 10) CYL 
+ DISP(NEW, DELETE, DELETE)
+ DSNU1035I   032 10:18:11.52 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:11.52 DSNUGUTC -  TEMPLATE SORTOUT DSN IBMUSER.SORTOUT.T&TIME. UNIT SYSDA SPACE(10, 10) CYL 
+ DISP(NEW, DELETE, DELETE)
+ DSNU1035I   032 10:18:11.52 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:11.52 DSNUGUTC -  TEMPLATE MAP DSN IBMUSER.SYSMAP UNIT SYSDA SPACE(10, 10) CYL DISP(NEW, 
+ DELETE, CATLG)
+ DSNU1035I   032 10:18:11.52 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:11.52 DSNUGUTC -  LOAD DATA INDDN SYSCLIEN WORKDDN(SORTIN, SORTOUT) RESUME YES FORMAT 
+ DELIMITED ASCII CCSID(1252) MAPDDN MAP
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -   INTO TABLE SMHEALTH.PATIENT IGNOREFIELDS YES
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -    (PATIENTID INTEGER,
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -     ID CHAR,
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -     USERNAME CHAR,
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -     DATEOFBIRTH DATE EXTERNAL,
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -     INSCARDNUMBER CHAR,
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -     FIRSTNAME CHAR,
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -     LASTNAME CHAR,
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -     ADDRESS CHAR,
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -     CITY CHAR,
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -     POSTCODE CHAR,
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -     PHONEMOBILE CHAR,
+ DSNU650I  DB1D 032 10:18:11.53 DSNURWI -     EMAILADDRESS CHAR)
+ DSNU1038I   032 10:18:11.57 DSNUGDYN - DATASET ALLOCATED.  TEMPLATE=SORTIN 
+                        DDNAME=SYS00066   
+                        DSN=IBMUSER.SORTIN.T151811
+ DSNU1038I   032 10:18:11.59 DSNUGDYN - DATASET ALLOCATED.  TEMPLATE=SORTOUT
+                        DDNAME=SYS00067   
+                        DSN=IBMUSER.SORTOUT.T151811 
+ DSNU304I  DB1D 032 10:18:11.61 DSNURWT - (RE)LOAD PHASE STATISTICS - NUMBER OF RECORDS=10 FOR TABLE SMHEALTH.PATIENT 
+ DSNU1147I DB1D 032 10:18:11.61 DSNURWT - (RE)LOAD PHASE STATISTICS - TOTAL NUMBER OF RECORDS LOADED=10 FOR TABLESPACE
+ SMHEALTH.PATIENT 
+ DSNU3340I   032 10:18:11.64 DSNUGSOR - UTILITY PERFORMS DYNAMIC ALLOCATION OF SORT DISK SPACE
+ DSNU302I    032 10:18:11.69 DSNURILD - (RE)LOAD PHASE STATISTICS - NUMBER OF INPUT RECORDS PROCESSED=10  
+ DSNU300I    032 10:18:11.69 DSNURILD - (RE)LOAD PHASE COMPLETE, ELAPSED TIME=00:00:00
+ DSNU042I    032 10:18:11.69 DSNUGSOR - SORT PHASE STATISTICS - 
+                       NUMBER OF RECORDS=20 
+                       ELAPSED TIME=00:00:00
+ DSNU349I  DB1D 032 10:18:11.72 DSNURBXA - BUILD PHASE STATISTICS - NUMBER OF KEYS=10 FOR INDEX SMHEALTH.PATIENTA_#_LEP 
+ DSNU349I  DB1D 032 10:18:11.75 DSNURBXA - BUILD PHASE STATISTICS - NUMBER OF KEYS=10 FOR INDEX SMHEALTH.IPATIENT 
+ DSNU258I    032 10:18:11.75 DSNURBXD - BUILD PHASE STATISTICS - NUMBER OF INDEXES=2
+ DSNU259I    032 10:18:11.75 DSNURBXD - BUILD PHASE COMPLETE, ELAPSED TIME=00:00:00 
+ DSNU3350I   032 10:18:11.76 DSNUGSOR - SORT TASK SORT: 20 RECORDS SORTED, ESTIMATED 20, VARIATION 0 PERCENT
+ DSNU3352I   032 10:18:11.76 DSNUGSOR - SORT TASK SORT: USED DFSORT 
+ DSNU3354I   032 10:18:11.76 DSNUGSOR - SORT TASK SORT: MEMORY BELOW THE BAR: OPTIMAL 6 MB, USED 6 MB 
+ DSNU568I  DB1D 032 10:18:11.82 DSNUGSRX - INDEX SMHEALTH.IPATIENT IS IN INFORMATIONAL COPY PENDING STATE 
+ DSNU3357I   032 10:18:11.82 DSNUGUTC - MAXIMUM SORT AMOUNT ESTIMATION VARIATION WAS 0 PERCENT
+ DSNU3355I   032 10:18:11.82 DSNUGUTC - TOTAL SORT MEMORY BELOW THE BAR: OPTIMAL 6 MB, USED 6 MB
+ DSNU010I    032 10:18:11.83 DSNUGBAC - UTILITY EXECUTION COMPLETE, HIGHEST RETURN CODE=0 
+
+2019-02-01T10:20:11.711:  Reading column definitions file ../summit-health-synthea/columndefs/sh-medications-csvcolumns.txt
+2019-02-01T10:20:11.860:  Converting input file output/csv/sh_medications.csv to block mode
+2019-02-01T10:20:11.862:  Loading the JDBC driver
+2019-02-01T10:20:11.875:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER
+2019-02-01T10:20:12.165:  Uploading data
+2019-02-01T10:20:13.008:  Upload of output/csv/sh_medications.csv complete.  Return code 0. 1DSNU000I    032 10:18:12.81 DSNUGUTC - OUTPUT START FOR UTILITY, UTILID = ZLOAD03210201216 
+ DSNU1045I   032 10:18:12.81 DSNUGTIS - PROCESSING SYSIN AS UNICODE UTF-8 
+0DSNU050I    032 10:18:12.82 DSNUGUTC -  TEMPLATE SORTIN DSN IBMUSER.SORTIN.T&TIME. UNIT SYSDA SPACE(10, 10) CYL 
+ DISP(NEW, DELETE, DELETE)
+ DSNU1035I   032 10:18:12.82 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:12.82 DSNUGUTC -  TEMPLATE SORTOUT DSN IBMUSER.SORTOUT.T&TIME. UNIT SYSDA SPACE(10, 10) CYL 
+ DISP(NEW, DELETE, DELETE)
+ DSNU1035I   032 10:18:12.82 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:12.82 DSNUGUTC -  TEMPLATE MAP DSN IBMUSER.SYSMAP UNIT SYSDA SPACE(10, 10) CYL DISP(NEW, 
+ DELETE, CATLG)
+ DSNU1035I   032 10:18:12.83 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:12.83 DSNUGUTC -  LOAD DATA INDDN SYSCLIEN WORKDDN(SORTIN, SORTOUT) RESUME YES FORMAT 
+ DELIMITED ASCII CCSID(1252) MAPDDN MAP
+ DSNU650I  DB1D 032 10:18:12.83 DSNURWI -   INTO TABLE SMHEALTH.MEDICATION IGNOREFIELDS YES
+ DSNU650I  DB1D 032 10:18:12.83 DSNURWI -    (PATIENTID INTEGER,
+ DSNU650I  DB1D 032 10:18:12.83 DSNURWI -     DRUGNAME CHAR,
+ DSNU650I  DB1D 032 10:18:12.83 DSNURWI -     STRENGTH CHAR,
+ DSNU650I  DB1D 032 10:18:12.83 DSNURWI -     AMOUNT SMALLINT,
+ DSNU650I  DB1D 032 10:18:12.83 DSNURWI -     ROUTE CHAR,
+ DSNU650I  DB1D 032 10:18:12.83 DSNURWI -     FREQUENCY CHAR,
+ DSNU650I  DB1D 032 10:18:12.83 DSNURWI -     IDENTIFIER CHAR,
+ DSNU650I  DB1D 032 10:18:12.83 DSNURWI -     TYPE CHAR)
+ DSNU1038I   032 10:18:12.89 DSNUGDYN - DATASET ALLOCATED.  TEMPLATE=SORTIN 
+                        DDNAME=SYS00071   
+                        DSN=IBMUSER.SORTIN.T151812
+ DSNU1038I   032 10:18:12.90 DSNUGDYN - DATASET ALLOCATED.  TEMPLATE=SORTOUT
+                        DDNAME=SYS00072   
+                        DSN=IBMUSER.SORTOUT.T151812 
+ DSNU1038I   032 10:18:12.92 DSNUGDYN - DATASET ALLOCATED.  TEMPLATE=MAP
+                        DDNAME=SYS00073   
+                        DSN=IBMUSER.SYSMAP
+ DSNU304I  DB1D 032 10:18:12.95 DSNURWT - (RE)LOAD PHASE STATISTICS - NUMBER OF RECORDS=13 FOR TABLE SMHEALTH.MEDICATION
+ DSNU1147I DB1D 032 10:18:12.95 DSNURWT - (RE)LOAD PHASE STATISTICS - TOTAL NUMBER OF RECORDS LOADED=13 FOR TABLESPACE
+ SMHEALTH.MEDICATI
+ DSNU3340I   032 10:18:12.98 DSNUGSOR - UTILITY PERFORMS DYNAMIC ALLOCATION OF SORT DISK SPACE
+ DSNU302I    032 10:18:13.03 DSNURILD - (RE)LOAD PHASE STATISTICS - NUMBER OF INPUT RECORDS PROCESSED=13  
+ DSNU300I    032 10:18:13.03 DSNURILD - (RE)LOAD PHASE COMPLETE, ELAPSED TIME=00:00:00
+ DSNU042I    032 10:18:13.03 DSNUGSOR - SORT PHASE STATISTICS - 
+                       NUMBER OF RECORDS=39 
+                       ELAPSED TIME=00:00:00
+ DSNU349I  DB1D 032 10:18:13.07 DSNURBXA - BUILD PHASE STATISTICS - NUMBER OF KEYS=13 FOR INDEX SMHEALTH.MEDICATI_#_VWR 
+ DSNU349I  DB1D 032 10:18:13.10 DSNURBXA - BUILD PHASE STATISTICS - NUMBER OF KEYS=13 FOR INDEX SMHEALTH.IMEDICATION
+ DSNU349I  DB1D 032 10:18:13.13 DSNURBXA - BUILD PHASE STATISTICS - NUMBER OF KEYS=13 FOR INDEX SMHEALTH.MEDICATION2
+ DSNU258I    032 10:18:13.13 DSNURBXD - BUILD PHASE STATISTICS - NUMBER OF INDEXES=3
+ DSNU259I    032 10:18:13.13 DSNURBXD - BUILD PHASE COMPLETE, ELAPSED TIME=00:00:00 
+ DSNU3350I   032 10:18:13.14 DSNUGSOR - SORT TASK SORT: 39 RECORDS SORTED, ESTIMATED 39, VARIATION 0 PERCENT
+ DSNU3352I   032 10:18:13.14 DSNUGSOR - SORT TASK SORT: USED DFSORT 
+ DSNU3354I   032 10:18:13.14 DSNUGSOR - SORT TASK SORT: MEMORY BELOW THE BAR: OPTIMAL 6 MB, USED 6 MB 
+ DSNU363I  DB1D 032 10:18:13.15 DSNURCRI - ENFORCE PHASE STATISTICS - 
+                       RELATIONSHIP SMHEALTH.MEDICATION.PATIENTI    
+                       FOREIGN KEYS CHECKED=13
+                       CONSTRAINT VIOLATIONS ENCOUNTERED=0
+ DSNU369I    032 10:18:13.16 DSNURENF - ENFORCE PHASE COMPLETE, ELAPSED TIME=00:00:00 
+ DSNU568I  DB1D 032 10:18:13.22 DSNUGSRX - INDEX SMHEALTH.IMEDICATION IS IN INFORMATIONAL COPY PENDING STATE
+ DSNU568I  DB1D 032 10:18:13.22 DSNUGSRX - INDEX SMHEALTH.MEDICATION2 IS IN INFORMATIONAL COPY PENDING STATE
+ DSNU3357I   032 10:18:13.22 DSNUGUTC - MAXIMUM SORT AMOUNT ESTIMATION VARIATION WAS 0 PERCENT
+ DSNU3355I   032 10:18:13.22 DSNUGUTC - TOTAL SORT MEMORY BELOW THE BAR: OPTIMAL 6 MB, USED 6 MB
+ DSNU010I    032 10:18:13.22 DSNUGBAC - UTILITY EXECUTION COMPLETE, HIGHEST RETURN CODE=0 
+
+2019-02-01T10:20:13.106:  Reading column definitions file ../summit-health-synthea/columndefs/sh-observations-csvcolumns.txt
+2019-02-01T10:20:13.212:  Converting input file output/csv/sh_observations.csv to block mode
+2019-02-01T10:20:13.366:  Loading the JDBC driver
+2019-02-01T10:20:13.377:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER
+2019-02-01T10:20:13.677:  Uploading data
+2019-02-01T10:20:14.011:  Upload of output/csv/sh_observations.csv complete.  Return code 0. 1DSNU000I    032 10:18:14.12 DSNUGUTC - OUTPUT START FOR UTILITY, UTILID = ZLOAD03210201367 
+ DSNU1045I   032 10:18:14.12 DSNUGTIS - PROCESSING SYSIN AS UNICODE UTF-8 
+0DSNU050I    032 10:18:14.13 DSNUGUTC -  TEMPLATE SORTIN DSN IBMUSER.SORTIN.T&TIME. UNIT SYSDA SPACE(10, 10) CYL 
+ DISP(NEW, DELETE, DELETE)
+ DSNU1035I   032 10:18:14.13 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:14.13 DSNUGUTC -  TEMPLATE SORTOUT DSN IBMUSER.SORTOUT.T&TIME. UNIT SYSDA SPACE(10, 10) CYL 
+ DISP(NEW, DELETE, DELETE)
+ DSNU1035I   032 10:18:14.13 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:14.13 DSNUGUTC -  TEMPLATE MAP DSN IBMUSER.SYSMAP UNIT SYSDA SPACE(10, 10) CYL DISP(NEW, 
+ DELETE, CATLG)
+ DSNU1035I   032 10:18:14.14 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:14.14 DSNUGUTC -  LOAD DATA INDDN SYSCLIEN WORKDDN(SORTIN, SORTOUT) RESUME YES FORMAT 
+ DELIMITED ASCII CCSID(1252) MAPDDN MAP
+ DSNU650I  DB1D 032 10:18:14.14 DSNURWI -   INTO TABLE SMHEALTH.OBSERVATIONS IGNOREFIELDS YES
+ DSNU650I  DB1D 032 10:18:14.14 DSNURWI -    (PATIENTID INTEGER,
+ DSNU650I  DB1D 032 10:18:14.14 DSNURWI -     DATEOFOBSERVATION DATE EXTERNAL(DATE_C),
+ DSNU650I  DB1D 032 10:18:14.14 DSNURWI -     CODE CHAR,
+ DSNU650I  DB1D 032 10:18:14.14 DSNURWI -     DESCRIPTION CHAR,
+ DSNU650I  DB1D 032 10:18:14.14 DSNURWI -     NUMERICVALUE FLOAT,
+ DSNU650I  DB1D 032 10:18:14.14 DSNURWI -     CHARACTERVALUE CHAR,
+ DSNU650I  DB1D 032 10:18:14.14 DSNURWI -     UNITS CHAR)
+ DSNU304I  DB1D 032 10:18:14.19 DSNURWT - (RE)LOAD PHASE STATISTICS - NUMBER OF RECORDS=1357 FOR TABLE
+ SMHEALTH.OBSERVATIONS
+ DSNU1147I DB1D 032 10:18:14.19 DSNURWT - (RE)LOAD PHASE STATISTICS - TOTAL NUMBER OF RECORDS LOADED=1357 FOR TABLESPACE
+ SMHEALTH.OBSERVAT
+ DSNU302I    032 10:18:14.20 DSNURILD - (RE)LOAD PHASE STATISTICS - NUMBER OF INPUT RECORDS PROCESSED=1357  
+ DSNU300I    032 10:18:14.20 DSNURILD - (RE)LOAD PHASE COMPLETE, ELAPSED TIME=00:00:00
+ DSNU010I    032 10:18:14.20 DSNUGBAC - UTILITY EXECUTION COMPLETE, HIGHEST RETURN CODE=0 
+
+2019-02-01T10:20:14.106:  Reading column definitions file ../summit-health-synthea/columndefs/sh-appointments-csvcolumns.txt
+2019-02-01T10:20:14.207:  Converting input file output/csv/sh_appointments.csv to block mode
+2019-02-01T10:20:14.210:  Loading the JDBC driver
+2019-02-01T10:20:14.223:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER
+2019-02-01T10:20:14.527:  Uploading data
+2019-02-01T10:20:15.109:  Upload of output/csv/sh_appointments.csv complete.  Return code 0. 1DSNU000I    032 10:18:15.22 DSNUGUTC - OUTPUT START FOR UTILITY, UTILID = ZLOAD03210201452 
+ DSNU1045I   032 10:18:15.23 DSNUGTIS - PROCESSING SYSIN AS UNICODE UTF-8 
+0DSNU050I    032 10:18:15.23 DSNUGUTC -  TEMPLATE SORTIN DSN IBMUSER.SORTIN.T&TIME. UNIT SYSDA SPACE(10, 10) CYL 
+ DISP(NEW, DELETE, DELETE)
+ DSNU1035I   032 10:18:15.23 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:15.24 DSNUGUTC -  TEMPLATE SORTOUT DSN IBMUSER.SORTOUT.T&TIME. UNIT SYSDA SPACE(10, 10) CYL 
+ DISP(NEW, DELETE, DELETE)
+ DSNU1035I   032 10:18:15.24 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:15.24 DSNUGUTC -  TEMPLATE MAP DSN IBMUSER.SYSMAP UNIT SYSDA SPACE(10, 10) CYL DISP(NEW, 
+ DELETE, CATLG)
+ DSNU1035I   032 10:18:15.24 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:15.24 DSNUGUTC -  LOAD DATA INDDN SYSCLIEN WORKDDN(SORTIN, SORTOUT) RESUME YES FORMAT 
+ DELIMITED ASCII CCSID(1252) MAPDDN MAP
+ DSNU650I  DB1D 032 10:18:15.24 DSNURWI -   INTO TABLE SMHEALTH.APPOINTMENTS IGNOREFIELDS YES
+ DSNU650I  DB1D 032 10:18:15.24 DSNURWI -    (PATIENTID INTEGER,
+ DSNU650I  DB1D 032 10:18:15.24 DSNURWI -     FIRSTNAME CHAR,
+ DSNU650I  DB1D 032 10:18:15.24 DSNURWI -     LASTNAME CHAR,
+ DSNU650I  DB1D 032 10:18:15.24 DSNURWI -     APPT_DATE DATE EXTERNAL(DATE_C),
+ DSNU650I  DB1D 032 10:18:15.24 DSNURWI -     APPT_TIME CHAR,
+ DSNU650I  DB1D 032 10:18:15.24 DSNURWI -     MED_FIELD CHAR,
+ DSNU650I  DB1D 032 10:18:15.24 DSNURWI -     OFF_NAME CHAR,
+ DSNU650I  DB1D 032 10:18:15.24 DSNURWI -     OFF_ADDR CHAR,
+ DSNU650I  DB1D 032 10:18:15.24 DSNURWI -     OFF_CITY CHAR,
+ DSNU650I  DB1D 032 10:18:15.24 DSNURWI -     OFF_ZIP CHAR)
+ DSNU304I  DB1D 032 10:18:15.29 DSNURWT - (RE)LOAD PHASE STATISTICS - NUMBER OF RECORDS=10 FOR TABLE
+ SMHEALTH.APPOINTMENTS
+ DSNU1147I DB1D 032 10:18:15.29 DSNURWT - (RE)LOAD PHASE STATISTICS - TOTAL NUMBER OF RECORDS LOADED=10 FOR TABLESPACE
+ SMHEALTH.APPOINTM
+ DSNU302I    032 10:18:15.30 DSNURILD - (RE)LOAD PHASE STATISTICS - NUMBER OF INPUT RECORDS PROCESSED=10  
+ DSNU300I    032 10:18:15.30 DSNURILD - (RE)LOAD PHASE COMPLETE, ELAPSED TIME=00:00:00
+ DSNU010I    032 10:18:15.30 DSNUGBAC - UTILITY EXECUTION COMPLETE, HIGHEST RETURN CODE=0 
+
+2019-02-01T10:20:15.204:  Reading column definitions file ../summit-health-synthea/columndefs/sh-users-csvcolumns.txt
+2019-02-01T10:20:15.306:  Converting input file output/csv/sh_users.csv to block mode
+2019-02-01T10:20:15.308:  Loading the JDBC driver
+2019-02-01T10:20:15.320:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER
+2019-02-01T10:20:15.610:  Uploading data
+2019-02-01T10:20:16.529:  Upload of output/csv/sh_users.csv complete.  Return code 0. 1DSNU000I    032 10:18:16.35 DSNUGUTC - OUTPUT START FOR UTILITY, UTILID = ZLOAD03210201561 
+ DSNU1045I   032 10:18:16.35 DSNUGTIS - PROCESSING SYSIN AS UNICODE UTF-8 
+0DSNU050I    032 10:18:16.36 DSNUGUTC -  TEMPLATE SORTIN DSN IBMUSER.SORTIN.T&TIME. UNIT SYSDA SPACE(10, 10) CYL 
+ DISP(NEW, DELETE, DELETE)
+ DSNU1035I   032 10:18:16.36 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:16.36 DSNUGUTC -  TEMPLATE SORTOUT DSN IBMUSER.SORTOUT.T&TIME. UNIT SYSDA SPACE(10, 10) CYL 
+ DISP(NEW, DELETE, DELETE)
+ DSNU1035I   032 10:18:16.36 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:16.36 DSNUGUTC -  TEMPLATE MAP DSN IBMUSER.SYSMAP UNIT SYSDA SPACE(10, 10) CYL DISP(NEW, 
+ DELETE, CATLG)
+ DSNU1035I   032 10:18:16.36 DSNUJTDR - TEMPLATE STATEMENT PROCESSED SUCCESSFULLY 
+0DSNU050I    032 10:18:16.36 DSNUGUTC -  LOAD DATA INDDN SYSCLIEN WORKDDN(SORTIN, SORTOUT) RESUME YES FORMAT 
+ DELIMITED ASCII CCSID(1252) MAPDDN MAP
+ DSNU650I  DB1D 032 10:18:16.37 DSNURWI -   INTO TABLE SMHEALTH.USER IGNOREFIELDS YES
+ DSNU650I  DB1D 032 10:18:16.37 DSNURWI -    (PATIENTID INTEGER,
+ DSNU650I  DB1D 032 10:18:16.37 DSNURWI -     USERNAME CHAR,
+ DSNU650I  DB1D 032 10:18:16.37 DSNURWI -     USERPASSWORD CHAR)
+ DSNU1038I   032 10:18:16.41 DSNUGDYN - DATASET ALLOCATED.  TEMPLATE=SORTIN 
+                        DDNAME=SYS00083   
+                        DSN=IBMUSER.SORTIN.T151816
+ DSNU1038I   032 10:18:16.42 DSNUGDYN - DATASET ALLOCATED.  TEMPLATE=SORTOUT
+                        DDNAME=SYS00084   
+                        DSN=IBMUSER.SORTOUT.T151816 
+ DSNU1038I   032 10:18:16.43 DSNUGDYN - DATASET ALLOCATED.  TEMPLATE=MAP
+                        DDNAME=SYS00085   
+                        DSN=IBMUSER.SYSMAP
+ DSNU304I  DB1D 032 10:18:16.46 DSNURWT - (RE)LOAD PHASE STATISTICS - NUMBER OF RECORDS=10 FOR TABLE SMHEALTH.USER
+ DSNU1147I DB1D 032 10:18:16.46 DSNURWT - (RE)LOAD PHASE STATISTICS - TOTAL NUMBER OF RECORDS LOADED=10 FOR TABLESPACE
+ SMHEALTH.USER
+ DSNU3340I   032 10:18:16.49 DSNUGSOR - UTILITY PERFORMS DYNAMIC ALLOCATION OF SORT DISK SPACE
+ DSNU302I    032 10:18:16.54 DSNURILD - (RE)LOAD PHASE STATISTICS - NUMBER OF INPUT RECORDS PROCESSED=10  
+ DSNU300I    032 10:18:16.54 DSNURILD - (RE)LOAD PHASE COMPLETE, ELAPSED TIME=00:00:00
+ DSNU042I    032 10:18:16.55 DSNUGSOR - SORT PHASE STATISTICS - 
+                       NUMBER OF RECORDS=30 
+                       ELAPSED TIME=00:00:00
+ DSNU349I  DB1D 032 10:18:16.58 DSNURBXA - BUILD PHASE STATISTICS - NUMBER OF KEYS=10 FOR INDEX SMHEALTH.USERABCD_#_ESQ 
+ DSNU349I  DB1D 032 10:18:16.61 DSNURBXA - BUILD PHASE STATISTICS - NUMBER OF KEYS=10 FOR INDEX SMHEALTH.IUSER
+ DSNU258I    032 10:18:16.61 DSNURBXD - BUILD PHASE STATISTICS - NUMBER OF INDEXES=2
+ DSNU259I    032 10:18:16.61 DSNURBXD - BUILD PHASE COMPLETE, ELAPSED TIME=00:00:00 
+ DSNU3350I   032 10:18:16.61 DSNUGSOR - SORT TASK SORT: 30 RECORDS SORTED, ESTIMATED 30, VARIATION 0 PERCENT
+ DSNU3352I   032 10:18:16.61 DSNUGSOR - SORT TASK SORT: USED DFSORT 
+ DSNU3354I   032 10:18:16.61 DSNUGSOR - SORT TASK SORT: MEMORY BELOW THE BAR: OPTIMAL 6 MB, USED 6 MB 
+ DSNU363I  DB1D 032 10:18:16.63 DSNURCRI - ENFORCE PHASE STATISTICS - 
+                       RELATIONSHIP SMHEALTH.USER.PATIENTI    
+                       FOREIGN KEYS CHECKED=10
+                       CONSTRAINT VIOLATIONS ENCOUNTERED=0
+ DSNU369I    032 10:18:16.63 DSNURENF - ENFORCE PHASE COMPLETE, ELAPSED TIME=00:00:00 
+ DSNU568I  DB1D 032 10:18:16.69 DSNUGSRX - INDEX SMHEALTH.IUSER IS IN INFORMATIONAL COPY PENDING STATE
+ DSNU3357I   032 10:18:16.69 DSNUGUTC - MAXIMUM SORT AMOUNT ESTIMATION VARIATION WAS 0 PERCENT
+ DSNU3355I   032 10:18:16.69 DSNUGUTC - TOTAL SORT MEMORY BELOW THE BAR: OPTIMAL 6 MB, USED 6 MB
+ DSNU010I    032 10:18:16.70 DSNUGBAC - UTILITY EXECUTION COMPLETE, HIGHEST RETURN CODE=0 
+
+
+Finished
