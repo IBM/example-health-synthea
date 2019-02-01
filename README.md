@@ -128,8 +128,8 @@ variable instead.)
     ../summit-health-synthea/run 10 "New York"
     ```
 
-The first argument tells Synthea how many patients to generate.
-The second argument tells Synthea which U.S. state the patients live in.
+    The first argument tells Synthea how many patients to generate.
+    The second argument tells Synthea which U.S. state the patients live in.
 
 # Sample output
 
