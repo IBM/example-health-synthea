@@ -101,8 +101,8 @@ It also requires the IBM Data Server Driver for JDBC version 4.22.29 or later.
     ```
 
 4. Change the following properties in synthea/src/main/resources/synthea.properties:
-* Set exporter.csv.export to true
-* Set generate.append_numbers_to_person_names = false (optional)
+    * Set exporter.csv.export to true
+    * Set generate.append_numbers_to_person_names = false (optional)
 
 5. Create the DB2 for z/OS database.  The [schemas.sql](schemas.sql) file contains SQL for creating the database.  You can use SPUFI
 or the DSNTEP2 or DSNTIAD sample programs to process the SQL.  You can change the database name or schema name if desired.
@@ -113,20 +113,20 @@ If you do not set these variables, the script prompts you for them.  (Beware tha
 script does not mask the database password when you type it so it is recommended to use the
 variable instead.)
 
-```
-export DATABASE_URL=*//host:port/location*
-export DATABASE_USER=*userid*
-export DATABASE_PASSWORD=*password*
-export DATABASE_SCHEMA=*schema name*
-```
+    <code>
+    export DATABASE_URL=*//host:port/location*
+    export DATABASE_USER=*userid*
+    export DATABASE_PASSWORD=*password*
+    export DATABASE_SCHEMA=*schema name*
+    </code>
 
 7. Run the script from this project with the current directory set to your synthea project.
 (The syntax below assumes you cloned this project and the synthea project to sibling folders.)
 
-```
-cd synthea
-../summit-health-synthea/run 10 "New York"
-```
+    ```
+    cd synthea
+    ../summit-health-synthea/run 10 "New York"
+    ```
 
 The first argument tells Synthea how many patients to generate.
 The second argument tells Synthea which U.S. state the patients live in.
