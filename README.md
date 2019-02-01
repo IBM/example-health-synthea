@@ -113,12 +113,12 @@ If you do not set these variables, the script prompts you for them.  (Beware tha
 script does not mask the database password when you type it so it is recommended to use the
 variable instead.)
 
-    <code>
-    export DATABASE_URL=*//host:port/location*
-    export DATABASE_USER=*userid*
-    export DATABASE_PASSWORD=*password*
-    export DATABASE_SCHEMA=*schema name*
-    </code>
+    ```
+    export DATABASE_URL=//host:port/location
+    export DATABASE_USER=userid
+    export DATABASE_PASSWORD=password
+    export DATABASE_SCHEMA=schema name
+    ```
 
 7. Run the script from this project with the current directory set to your synthea project.
 (The syntax below assumes you cloned this project and the synthea project to sibling folders.)
