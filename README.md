@@ -6,10 +6,10 @@ This work was done as part of the Summit Health set of code patterns, which demo
 We needed a way to generate a large amount of patient health care data to populate the DB2 for z/OS database.
 We found an open source tool called [Synthea](https://github.com/synthetichealth/synthea/) which generates the kind of synthentic data we wanted.
 
-The Synthea csv files needed to be transformed to match the table schemas used in the Summit Health application.
+The Synthea CSV files needed to be transformed to match the table schemas used in the Summit Health application.
 We found a public domain tool called [SQLite](https://www.SQLite.org/index.html) which made these transformations easy.
 
-Finally the transformed csv files needed to be loaded from a distributed workstation into the DB2 for z/OS database.
+Finally the transformed CSV files needed to be loaded from a distributed workstation into the DB2 for z/OS database.
 We used a JDBC function called [zload](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.apdv.java.doc/src/tpc/imjcc_tjv00027.html) to accomplish this.
 zload requires DB2 for z/OS version 12.
 
@@ -52,7 +52,7 @@ This data could have been generated on z/OS instead but it was easier to reuse t
 to generate new ones as well.
 
 Finally to get the data into the DB2 for z/OS database we made use of the zload JDBC function.
-The zload function transfers the csv file to z/OS and invokes the LOAD utility to load the file into a table.
+The zload function transfers the CSV file to z/OS and invokes the LOAD utility to load the file into a table.
 The JDBC program uses parameters to know which database to connect to, the credentials needed for the connection,
 the table to load, and the column format of the CSV file.
 
@@ -62,43 +62,43 @@ It also requires the IBM Data Server Driver for JDBC version 4.22.29 or later.
 # Steps
 
 1. Install the following prerequisite tools.
-* A Java 8 (or higher) JDK such as [OpenJDK](https://openjdk.java.net/install/index.html)
-* [maven](https://maven.apache.org/download.cgi)
-* [gradle](https://gradle.org/install/)
-* [SQLite] version 3.26.0 (https://SQLite.org/download.html)
-* DB2 JDBC driver version 4.22.29 or later.  This needs to be installed in your local Maven artifact repository.
-** If you already have the DB2 JDBC driver version 4.22.29 or later in your internal Maven artifact repository, you can use it.
-You might need to change the `groupId`, `artifactId`, and `version` for the dependency in this project's top-level `pom.xml` file to match the values used in your repository.
-** Otherwise download the [DB2 JDBC Driver](http://www-01.ibm.com/support/docview.wss?uid=swg21363866) version 4.22.29.  Extract the `db2jcc4.jar` file from the downloaded archive file
-and run the following command to install it to your local Maven repository:
-```
-mvn install:install-file -Dfile=db2jcc4.jar -Dversion=4.22.29 -DgroupId=com.ibm.db2.jcc -DartifactId=db2jcc4 -Dpackaging=jar
-```
+    * A Java 8 (or higher) JDK such as [OpenJDK](https://openjdk.java.net/install/index.html)
+    * [maven](https://maven.apache.org/download.cgi)
+    * [gradle](https://gradle.org/install/)
+    * [SQLite](https://SQLite.org/download.html) version 3.26.0 
+    * DB2 JDBC driver version 4.22.29 or later.  This needs to be installed in your local Maven artifact repository.
+        ** If you already have the DB2 JDBC driver version 4.22.29 or later in your internal Maven artifact repository, you can use it.
+        You might need to change the `groupId`, `artifactId`, and `version` for the dependency in this project's `pom.xml` file to match the values used in your repository.
+        ** Otherwise download the [DB2 JDBC Driver](http://www-01.ibm.com/support/docview.wss?uid=swg21363866) version 4.22.29.  Extract the `db2jcc4.jar` file from the downloaded archive file
+        and run the following command to install it to your local Maven repository:
+        ```
+        mvn install:install-file -Dfile=db2jcc4.jar -Dversion=4.22.29 -DgroupId=com.ibm.db2.jcc -DartifactId=db2jcc4 -Dpackaging=jar
+        ```
 
 2. Clone and build this project.
-```
-git clone https://github.com/IBM/summit-health-synthea.git
-cd summit-health-synthea
-mvn package
-```
+    ```
+    git clone https://github.com/IBM/summit-health-synthea.git
+    cd summit-health-synthea
+    mvn package
+    ```
 
 3. Clone and build the [Synthea project](https://github.com/synthetichealth/synthea/)
-```
-git clone https://github.com/synthetichealth/synthea.git
-cd synthea
-./gradlew build check test
-```
+    ```
+    git clone https://github.com/synthetichealth/synthea.git
+    cd synthea
+    ./gradlew build check test
+    ```
 
 If you encounter any OutOfMemoryError exceptions you may need to update the `build.gradle` file to increase the size of the Java heap.
 
-```
-test {
-    maxHeapSize = "8192m"
-}
-run {
-    maxHeapSize = "8192m"
-}
-```
+    ```
+    test {
+        maxHeapSize = "8192m"
+    }
+    run {
+        maxHeapSize = "8192m"
+    }
+    ```
 
 4. Change the following properties in synthea/src/main/resources/synthea.properties:
 * Set exporter.csv.export to true
