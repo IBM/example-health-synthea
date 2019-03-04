@@ -1,6 +1,7 @@
-# Transforming and loading CSV files into a DB2 for z/OS database
+# Transforming and loading big data CSV files into a DB2 for z/OS database
 
-In this Code Pattern, we will generate a set of CSV files, transform them using a tool called SQLite, and load them to a DB2 for z/OS database using a JDBC function called zload.
+This code pattern offers a tried and tested approach for transforming a large set of varying CSV schemas into a subset of SQL schemas using an open-source tool called SQLite
+and loading them to a DB2 for z/OS database using a JDBC function called zload.
 
 This work was done as part of the Summit Health set of code patterns, which demonstrate how cloud technology can access data stored on z/OS systems.
 We needed a way to generate a large amount of patient health care data to populate the DB2 for z/OS database.
@@ -33,6 +34,7 @@ The Synthea tool produces a variety of data.  We were interested in the followin
 * patients
 * observations
 * medications
+* conditions
 
 We needed to do some transformations from the [Synthea schemas](https://github.com/synthetichealth/synthea/wiki/CSV-File-Data-Dictionary) to our [DB2 schemas](schemas.sql).
 1. Patients are identified by UUIDs in Synthea files and by integers in our database.
@@ -44,7 +46,7 @@ In order to avoid conflicts with existing patient numbers, before using SQLite w
 That number is added to all the rows.
 (It is assumed no other patients are being added to the database at the same time.)
 
-To transform the observations and medications files, we use a JOIN with the transformed patients file to substitute the
+To transform the observations, medications and conditions files, we use a JOIN with the transformed patients file to substitute the
 patient UUIDs with the integer ids.
 
 We also used SQLite to create data for other tables (users, appointments) that don't exist in the Synthea data.
@@ -134,6 +136,11 @@ variable instead.)
 # Sample output
 
 Sample output from the script is in the [sample.out](sample.out) file.
+
+Elapsed time to generate, transform and load 5000 patients:
+* Synthea tool:  5m 50s
+* SQLite transformations:  14s
+* zload calls:  2m 19s
 
 ## License
 

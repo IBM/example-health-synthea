@@ -34,7 +34,8 @@ if [ "$DATABASE_SCHEMA" = "" ]; then
   read -p "Enter database schema name: " DATABASE_SCHEMA
 fi
 
-printf "\nGenerating data using Synthea\n"
+now=$(date +"%T")
+printf "\n$now: Generating data using Synthea\n"
 
 ./gradlew run -Params="[ '-p','$NUMPATIENTS', '$STATE' ]"
 
@@ -43,7 +44,8 @@ if [ ! -f output/csv/patients.csv ] || [ ! -f output/csv/medications.csv ] || [ 
   exit 1
 fi
 
-printf "\nGetting information from z/OS tables\n"
+now=$(date +"%T")
+printf "\n$now: Getting information from z/OS tables\n"
 
 java -cp $jarfile GetDBData output/csv/sh_variables.csv $DATABASE_URL $DATABASE_USER $DATABASE_PASSWORD $DATABASE_SCHEMA
 
@@ -52,7 +54,8 @@ if [ ! -f output/csv/sh_variables.csv ]; then
   exit 1
 fi
 
-printf "\nTransforming csv files\n"
+now=$(date +"%T")
+printf "\n$now: Transforming csv files\n"
 
 sqlite3 < $transforms/transformPatients.sql
 if [ ! -f output/csv/sh_patients.csv ] || [ ! -s output/csv/sh_patients.csv ]; then
@@ -72,6 +75,12 @@ if [ ! -f output/csv/sh_observations.csv ] || [ ! -s output/csv/sh_observations.
   exit 1
 fi
 
+sqlite3 < $transforms/transformConditions.sql
+if [ ! -f output/csv/sh_conditions.csv ] || [ ! -s output/csv/sh_conditions.csv ]; then
+  printf "\nERROR: Problem transforming conditions CSV file.  Check preceding messages.\n"
+  exit 1
+fi
+
 sqlite3 < $transforms/createAppointments.sql
 if [ ! -f output/csv/sh_appointments.csv ] || [ ! -s output/csv/sh_appointments.csv ]; then
   printf "\nERROR: Problem transforming appointments CSV file.  Check preceding messages.\n"
@@ -84,7 +93,8 @@ if [ ! -f output/csv/sh_users.csv ] || [ ! -s output/csv/sh_users.csv ]; then
   exit 1
 fi
 
-printf "\nLoading z/OS tables\n"
+now=$(date +"%T")
+printf "\n$now: Loading z/OS tables\n"
 
 java -cp $jarfile ZLoadFile output/csv/sh_patients.csv $columndefs/sh-patients-csvcolumns.txt $DATABASE_URL $DATABASE_USER $DATABASE_PASSWORD $DATABASE_SCHEMA.PATIENT
 if [ $? -ge 8 ]; then
@@ -104,6 +114,12 @@ if [ $? -ge 8 ]; then
   exit 1
 fi
 
+java -cp $jarfile ZLoadFile output/csv/sh_conditions.csv $columndefs/sh-conditions-csvcolumns.txt $DATABASE_URL $DATABASE_USER $DATABASE_PASSWORD $DATABASE_SCHEMA.CONDITIONS
+if [ $? -ge 8 ]; then
+  printf "\nERROR: Problem loading conditions data to z/OS database.  Check preceding messages.\n"
+  exit 1
+fi
+
 java -cp $jarfile ZLoadFile output/csv/sh_appointments.csv $columndefs/sh-appointments-csvcolumns.txt $DATABASE_URL $DATABASE_USER $DATABASE_PASSWORD $DATABASE_SCHEMA.APPOINTMENTS
 if [ $? -ge 8 ]; then
   printf "\nERROR: Problem loading appointments data to z/OS database.  Check preceding messages.\n"
@@ -116,4 +132,5 @@ if [ $? -ge 8 ]; then
   exit 1
 fi
 
-printf "\nFinished\n"
+now=$(date +"%T")
+printf "\n$now: Finished\n"

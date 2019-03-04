@@ -20,19 +20,19 @@
 @if "%DATABASE_PASSWORD%"=="" @set /p DATABASE_PASSWORD="Enter database password: "
 @if "%DATABASE_SCHEMA%"=="" @set /p DATABASE_SCHEMA="Enter database schema name: "
 
-@echo. && @echo Generating data using Synthea && @echo.
+@echo. && @echo %TIME%: Generating data using Synthea && @echo.
 
 call ./gradlew.bat run -Params="[ '-p','%NUMPATIENTS%', '%STATE%' ]"
 if not exist output\csv\patients.csv goto syntheaERROR
 if not exist output\csv\medications.csv goto syntheaERROR
 if not exist output\csv\observations.csv goto syntheaERROR
 
-@echo. && @echo Getting information from z/OS tables && @echo.
+@echo. && @echo %TIME%: Getting information from z/OS tables && @echo.
 
 java -cp %jarfile% GetDBData output/csv/sh_variables.csv %DATABASE_URL% %DATABASE_USER% %DATABASE_PASSWORD% %DATABASE_SCHEMA%
 if not exist output\csv\sh_variables.csv goto getDBDataERROR
 
-@echo. && @echo Transforming csv files && @echo.
+@echo. && @echo %TIME%: Transforming csv files && @echo.
 
 sqlite3 < %transforms%\transformPatients.sql
 if not exist output\csv\sh_patients.csv goto sqliteERROR
@@ -43,13 +43,16 @@ if not exist output\csv\sh_medications.csv goto sqliteERROR
 sqlite3 < %transforms%\transformObservations.sql
 if not exist output\csv\sh_observations.csv goto sqliteERROR
 
+sqlite3 < %transforms%\transformConditions.sql
+if not exist output\csv\sh_conditions.csv goto sqliteERROR
+
 sqlite3 < %transforms%\createAppointments.sql
 if not exist output\csv\sh_appointments.csv goto sqliteERROR
 
 sqlite3 < %transforms%\createUsers.sql
 if not exist output\csv\sh_users.csv goto sqliteERROR
 
-@echo. && @echo Loading z/OS tables && @echo.
+@echo. && @echo %TIME%: Loading z/OS tables && @echo.
 
 java -cp %jarfile% ZLoadFile output/csv/sh_patients.csv %columndefs%/sh-patients-csvcolumns.txt %DATABASE_URL% %DATABASE_USER% %DATABASE_PASSWORD% %DATABASE_SCHEMA%.PATIENT
 if errorlevel 8 goto zloadERROR
@@ -60,13 +63,16 @@ if errorlevel 8 goto zloadERROR
 java -cp %jarfile% ZLoadFile output/csv/sh_observations.csv %columndefs%/sh-observations-csvcolumns.txt %DATABASE_URL% %DATABASE_USER% %DATABASE_PASSWORD% %DATABASE_SCHEMA%.OBSERVATIONS
 if errorlevel 8 goto zloadERROR
 
+java -cp %jarfile% ZLoadFile output/csv/sh_conditions.csv %columndefs%/sh-conditions-csvcolumns.txt %DATABASE_URL% %DATABASE_USER% %DATABASE_PASSWORD% %DATABASE_SCHEMA%.CONDITIONS
+if errorlevel 8 goto zloadERROR
+
 java -cp %jarfile% ZLoadFile output/csv/sh_appointments.csv %columndefs%/sh-appointments-csvcolumns.txt %DATABASE_URL% %DATABASE_USER% %DATABASE_PASSWORD% %DATABASE_SCHEMA%.APPOINTMENTS
 if errorlevel 8 goto zloadERROR
 
 java -cp %jarfile% ZLoadFile output/csv/sh_users.csv %columndefs%/sh-users-csvcolumns.txt %DATABASE_URL% %DATABASE_USER% %DATABASE_PASSWORD% %DATABASE_SCHEMA%.USER
 if errorlevel 8 goto zloadERROR
 
-@echo. && @echo Finished && @echo.
+@echo. && @echo %TIME%: Finished && @echo.
 goto end
 
 :existingOutputERROR
