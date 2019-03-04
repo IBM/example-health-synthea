@@ -137,10 +137,10 @@ variable instead.)
 
 Sample output from the script is in the [sample.out](sample.out) file.
 
-Elapsed time to generate, transform and load 5000 patients:
-* Synthea tool:  5m 50s
-* SQLite transformations:  14s
-* zload calls:  2m 19s
+Elapsed time (in minutes and seconds) to generate, transform and load 5000 patients:
+* Synthea tool:  5:50
+* SQLite transformations:  0:14
+* zload calls:  2:19
 
 ## License
 
