@@ -1,5 +1,5 @@
 --
--- Transform synthea patients.csv file into format compatible with Summit Health.
+-- Transform synthea patients.csv file into format compatible with Example Health.
 --
 -- Usage:
 --   1. set working directory to Synthea project

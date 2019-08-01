@@ -3,11 +3,11 @@
 This code pattern offers a tried and tested approach for transforming a large set of varying CSV schemas into a subset of SQL schemas using an open-source tool called SQLite
 and loading them to a DB2 for z/OS database using a JDBC function called zload.
 
-This work was done as part of the Summit Health set of code patterns, which demonstrate how cloud technology can access data stored on z/OS systems.
+This work was done as part of the Example Health set of code patterns, which demonstrate how cloud technology can access data stored on z/OS systems.
 We needed a way to generate a large amount of patient health care data to populate the DB2 for z/OS database.
 We found an open source tool called [Synthea](https://github.com/synthetichealth/synthea/) which generates the kind of synthentic data we wanted.
 
-The Synthea CSV files needed to be transformed to match the table schemas used in the Summit Health application.
+The Synthea CSV files needed to be transformed to match the table schemas used in the Example Health application.
 We found a public domain tool called [SQLite](https://www.SQLite.org/index.html) which made these transformations easy.
 
 Finally the transformed CSV files needed to be loaded from a distributed workstation into the DB2 for z/OS database.
@@ -79,8 +79,8 @@ It also requires the IBM Data Server Driver for JDBC version 4.22.29 or later.
 
 2. Clone and build this project.
     ```
-    git clone https://github.com/IBM/summit-health-synthea.git
-    cd summit-health-synthea
+    git clone https://github.com/IBM/example-health-synthea.git
+    cd example-health-synthea
     mvn package
     ```
 
@@ -127,7 +127,7 @@ variable instead.)
 
     ```
     cd synthea
-    ../summit-health-synthea/run 10 "New York"
+    ../example-health-synthea/run 10 "New York"
     ```
 
     The first argument tells Synthea how many patients to generate.
