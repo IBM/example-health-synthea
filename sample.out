@@ -5632,7 +5632,7 @@ BUILD SUCCESSFUL in 5m 50s
  
 13:37:26.72: Loading z/OS tables 
 
-2019-03-04T13:37:27.111:  Reading column definitions file C:\summit-health-synthea\columndefs/sh-patients-csvcolumns.txt
+2019-03-04T13:37:27.111:  Reading column definitions file C:\example-health-synthea\columndefs/sh-patients-csvcolumns.txt
 2019-03-04T13:37:27.131:  Converting input file output/csv/sh_patients.csv to block mode
 2019-03-04T13:37:28.699:  Loading the JDBC driver
 2019-03-04T13:37:28.709:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER
@@ -5692,7 +5692,7 @@ BUILD SUCCESSFUL in 5m 50s
  DSNU3355I   063 13:35:33.26 DSNUGUTC - TOTAL SORT MEMORY BELOW THE BAR: OPTIMAL 6 MB, USED 6 MB
  DSNU010I    063 13:35:33.26 DSNUGBAC - UTILITY EXECUTION COMPLETE, HIGHEST RETURN CODE=4 
 
-2019-03-04T13:37:30.440:  Reading column definitions file C:\summit-health-synthea\columndefs/sh-medications-csvcolumns.txt
+2019-03-04T13:37:30.440:  Reading column definitions file C:\example-health-synthea\columndefs/sh-medications-csvcolumns.txt
 2019-03-04T13:37:30.460:  Converting input file output/csv/sh_medications.csv to block mode
 2019-03-04T13:37:31.409:  Loading the JDBC driver
 2019-03-04T13:37:31.421:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER
@@ -5759,7 +5759,7 @@ BUILD SUCCESSFUL in 5m 50s
  DSNU3355I   063 13:35:35.87 DSNUGUTC - TOTAL SORT MEMORY BELOW THE BAR: OPTIMAL 6 MB, USED 6 MB
  DSNU010I    063 13:35:35.87 DSNUGBAC - UTILITY EXECUTION COMPLETE, HIGHEST RETURN CODE=4 
 
-2019-03-04T13:37:33.016:  Reading column definitions file C:\summit-health-synthea\columndefs/sh-observations-csvcolumns.txt
+2019-03-04T13:37:33.016:  Reading column definitions file C:\example-health-synthea\columndefs/sh-observations-csvcolumns.txt
 2019-03-04T13:37:33.036:  Converting input file output/csv/sh_observations.csv to block mode
 2019-03-04T13:39:30.238:  Loading the JDBC driver
 2019-03-04T13:39:30.252:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER
@@ -5794,7 +5794,7 @@ BUILD SUCCESSFUL in 5m 50s
  DSNU300I    063 13:37:37.90 DSNURILD - (RE)LOAD PHASE COMPLETE, ELAPSED TIME=00:00:03
  DSNU010I    063 13:37:37.91 DSNUGBAC - UTILITY EXECUTION COMPLETE, HIGHEST RETURN CODE=4 
 
-2019-03-04T13:39:35.233:  Reading column definitions file C:\summit-health-synthea\columndefs/sh-conditions-csvcolumns.txt
+2019-03-04T13:39:35.233:  Reading column definitions file C:\example-health-synthea\columndefs/sh-conditions-csvcolumns.txt
 2019-03-04T13:39:35.258:  Converting input file output/csv/sh_conditions.csv to block mode
 2019-03-04T13:39:40.249:  Loading the JDBC driver
 2019-03-04T13:39:40.260:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER
@@ -5827,7 +5827,7 @@ BUILD SUCCESSFUL in 5m 50s
  DSNU300I    063 13:37:44.43 DSNURILD - (RE)LOAD PHASE COMPLETE, ELAPSED TIME=00:00:00
  DSNU010I    063 13:37:44.44 DSNUGBAC - UTILITY EXECUTION COMPLETE, HIGHEST RETURN CODE=4 
 
-2019-03-04T13:39:41.539:  Reading column definitions file C:\summit-health-synthea\columndefs/sh-appointments-csvcolumns.txt
+2019-03-04T13:39:41.539:  Reading column definitions file C:\example-health-synthea\columndefs/sh-appointments-csvcolumns.txt
 2019-03-04T13:39:41.558:  Converting input file output/csv/sh_appointments.csv to block mode
 2019-03-04T13:39:42.754:  Loading the JDBC driver
 2019-03-04T13:39:42.766:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER
@@ -5865,7 +5865,7 @@ BUILD SUCCESSFUL in 5m 50s
  DSNU300I    063 13:37:46.79 DSNURILD - (RE)LOAD PHASE COMPLETE, ELAPSED TIME=00:00:00
  DSNU010I    063 13:37:46.80 DSNUGBAC - UTILITY EXECUTION COMPLETE, HIGHEST RETURN CODE=4 
 
-2019-03-04T13:39:43.975:  Reading column definitions file C:\summit-health-synthea\columndefs/sh-users-csvcolumns.txt
+2019-03-04T13:39:43.975:  Reading column definitions file C:\example-health-synthea\columndefs/sh-users-csvcolumns.txt
 2019-03-04T13:39:43.993:  Converting input file output/csv/sh_users.csv to block mode
 2019-03-04T13:39:44.249:  Loading the JDBC driver
 2019-03-04T13:39:44.261:  Creating a JDBC connection to jdbc:db2://my.zos.com:5465/MYDB2V12 with user IBMUSER

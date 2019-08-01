@@ -26,7 +26,7 @@ CREATE TABLE APPOINTMENTS AS
          DATE('now','+3 months') AS APPT_DATE,
          '08:00' AS APPT_TIME,
          'Primary Care Physician' AS MED_FIELD,
-         'Summit Health' AS OFF_NAME,
+         'Example Health' AS OFF_NAME,
          '1 Main St' AS OFF_ADDR,
          CITY AS OFF_CITY,
          POSTCODE AS OFF_ZIP
